@@ -2,49 +2,58 @@
     "videos": [
       {
         "title": "Como aumentar sua Geração de Leads feat. Traktor",
-        "url": "https://youtu.be/kvZxxVLApxw",
-        "image": "/assets/thumbnail.png"
+        "url": "https://www.youtube.com/embed/kvZxxVLApxw",
+        "image": "/assets/thumbnail.png",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, obcaecati. Minima deserunt repellendus veniam rem doloribus quo maiores id tempora soluta, minus, iure iste iusto nesciunt sequi debitis, distinctio expedita."
+    },
+    {
+        "title": "Como aumentar sua Geração de Leads feat. Traktor",
+        "url": "https://www.youtube.com/embed/kvZxxVLApxw",
+        "image": "/assets/thumbnail.png",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, obcaecati. Minima deserunt repellendus veniam rem doloribus quo maiores id tempora soluta, minus, iure iste iusto nesciunt sequi debitis, distinctio expedita."
       },
       {
         "title": "Como aumentar sua Geração de Leads feat. Traktor",
-        "url": "https://youtu.be/kvZxxVLApxw",
-        "image": "/assets/thumbnail.png"
+        "url": "https://www.youtube.com/embed/kvZxxVLApxw",
+        "image": "/assets/thumbnail.png",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, obcaecati. Minima deserunt repellendus veniam rem doloribus quo maiores id tempora soluta, minus, iure iste iusto nesciunt sequi debitis, distinctio expedita."
+    },
+    {
+        "title": "Como aumentar sua Geração de Leads feat. Traktor",
+        "url": "https://www.youtube.com/embed/kvZxxVLApxw",
+        "image": "/assets/thumbnail.png",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, obcaecati. Minima deserunt repellendus veniam rem doloribus quo maiores id tempora soluta, minus, iure iste iusto nesciunt sequi debitis, distinctio expedita."
       },
       {
         "title": "Como aumentar sua Geração de Leads feat. Traktor",
-        "url": "https://youtu.be/kvZxxVLApxw",
-        "image": "/assets/thumbnail.png"
-      },   
+        "url": "https://www.youtube.com/embed/kvZxxVLApxw",
+        "image": "/assets/thumbnail.png",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, obcaecati. Minima deserunt repellendus veniam rem doloribus quo maiores id tempora soluta, minus, iure iste iusto nesciunt sequi debitis, distinctio expedita."
+    },
+    {
+        "title": "Como aumentar sua Geração de Leads feat. Traktor",
+        "url": "https://www.youtube.com/embed/kvZxxVLApxw",
+        "image": "/assets/thumbnail.png",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, obcaecati. Minima deserunt repellendus veniam rem doloribus quo maiores id tempora soluta, minus, iure iste iusto nesciunt sequi debitis, distinctio expedita."
+      },
       {
         "title": "Como aumentar sua Geração de Leads feat. Traktor",
-        "url": "https://youtu.be/kvZxxVLApxw",
-        "image": "/assets/thumbnail.png"
-      },   
+        "url": "https://www.youtube.com/embed/kvZxxVLApxw",
+        "image": "/assets/thumbnail.png",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, obcaecati. Minima deserunt repellendus veniam rem doloribus quo maiores id tempora soluta, minus, iure iste iusto nesciunt sequi debitis, distinctio expedita."
+    },
+    {
+        "title": "Como aumentar sua Geração de Leads feat. Traktor",
+        "url": "https://www.youtube.com/embed/kvZxxVLApxw",
+        "image": "/assets/thumbnail.png",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, obcaecati. Minima deserunt repellendus veniam rem doloribus quo maiores id tempora soluta, minus, iure iste iusto nesciunt sequi debitis, distinctio expedita."
+      },
       {
         "title": "Como aumentar sua Geração de Leads feat. Traktor",
-        "url": "https://youtu.be/kvZxxVLApxw",
-        "image": "/assets/thumbnail.png"
-      },   
-      {
-        "title": "Como aumentar sua Geração de Leads feat. Traktor",
-        "url": "https://youtu.be/kvZxxVLApxw",
-        "image": "/assets/thumbnail.png"
-      },   
-      {
-        "title": "Como aumentar sua Geração de Leads feat. Traktor",
-        "url": "https://youtu.be/kvZxxVLApxw",
-        "image": "/assets/thumbnail.png"
-      },   
-      {
-        "title": "Como aumentar sua Geração de Leads feat. Traktor",
-        "url": "https://youtu.be/kvZxxVLApxw",
-        "image": "/assets/thumbnail.png"
-      },   
-      {
-        "title": "Como aumentar sua Geração de Leads feat. Traktor",
-        "url": "https://youtu.be/kvZxxVLApxw",
-        "image": "/assets/thumbnail.png"
-      }   
+        "url": "https://www.youtube.com/embed/kvZxxVLApxw",
+        "image": "/assets/thumbnail.png",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, obcaecati. Minima deserunt repellendus veniam rem doloribus quo maiores id tempora soluta, minus, iure iste iusto nesciunt sequi debitis, distinctio expedita."
+    }      
     ]
   }
   
