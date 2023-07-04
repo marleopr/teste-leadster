@@ -5,7 +5,7 @@ export const Main = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 0px;
 `;
 
 export const RangeLogo = styled.div`
@@ -13,7 +13,7 @@ export const RangeLogo = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 20px;
+  margin: 20px;
 `;
 
 export const Logo = styled.div`
@@ -26,27 +26,28 @@ export const RangeInfo = styled.div`
   align-items: center;
   text-align: center;
   background-color: #f0f8ff;
-  padding: 20px;
-  width: 100vw;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 20rem;
 
   .text-leadster-400 {
     font-weight: bold;
     color: #2c83fb;
     font-size: 10px;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
     border: 2px solid #2c83fb;
     border-radius: 9% 7% 7% 2% / 23% 45% 51% 5%;
     padding: 5px 10px 5px 10px;
-    cursor: pointer;
   }
 
-  .text-2xl {
+  /* .text-2xl {
     font-size: 24px;
     font-weight: bold;
     color: #2c83fb;
     margin-bottom: 10px;
-  }
+  } */
 
   .text-transparent {
     color: transparent;
@@ -69,17 +70,17 @@ export const RangeInfo = styled.div`
     height: 10px;
   }
 
-  .divider {
+  /* .divider {
     height: 1px;
     background-color: #000000;
     opacity: 0.2;
     width: 100%;
     margin: 10px 0;
-  }
+  } */
 
-  .text-center {
+  /* .text-center {
     text-align: center;
-  }
+  } */
 
   .text-base {
     font-size: 16px;
@@ -98,6 +99,7 @@ export const HeaderSubtitle = styled.p`
   font-size: 58px;
   font-weight: bold;
   color: #2c83fb;
+  padding-bottom: 10px;
 `;
 
 export const HeaderDescription = styled.p`
