@@ -1,7 +1,7 @@
 "use client";
 import { createContext } from "react";
-import logo from "../../../../public/assets/logo.png";
-import logoSlogan from "../../../../public/assets/asset-header.png";
+import logo from "public/assets/logo.png";
+import logoSlogan from "public/assets/asset-header.png";
 import Image from "next/image";
 
 const Context = createContext();

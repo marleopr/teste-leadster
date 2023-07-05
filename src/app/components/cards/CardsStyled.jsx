@@ -90,6 +90,7 @@ export const ModalOverlay = styled.div`
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
 `;
 
 export const ModalContent = styled.div`
@@ -99,6 +100,7 @@ export const ModalContent = styled.div`
   border-radius: 10px;
   border-top: solid #0084ff;
   background-color: #fff;
+
   iframe {
     width: 100%;
     margin-bottom: 10px;

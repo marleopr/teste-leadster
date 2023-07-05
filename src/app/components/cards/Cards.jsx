@@ -13,13 +13,12 @@ import {
   ModalContent,
   ModalCloseButton,
   ModalTitle,
-  VideoPlayer,
   RangeButton,
   Button,
   DownloadIcon,
 } from "./CardsStyled";
-import play from "../../../../public/assets/botao-play.png";
-import cloudIcon from "../../../../public/assets/cloud-download.svg";
+import play from "public/assets/botao-play.png";
+import cloudIcon from "public/assets/cloud-download.svg";
 
 const Context = createContext();
 
