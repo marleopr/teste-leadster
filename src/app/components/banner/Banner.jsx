@@ -1,5 +1,5 @@
 "use client";
-import { createContext } from "react";
+import { createContext, useState } from "react";
 import Image from "next/image";
 import grafico from "public/assets/comparativo_img_CTA.png";
 import rdStation from "/public/assets/selo_RD.png";
@@ -21,10 +21,27 @@ import {
   RatingContainer,
   CardContainer,
 } from "./BannerStyled";
+import ChatComponent from "../chat/ChatComponent";
 
 const Banner = () => {
+  const [showChat, setShowChat] = useState(false);
+  // const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setShowChat(true);
+  };
+  const closeModal = () => {
+    setShowChat(false);
+  };
+  // const handleChatToggle = () => {
+  //   setShowChat(!showChat);
+  // };
+
   return (
     <GraphicBannerSection>
+      {showChat && (
+        <ChatComponent openModal={openModal} closeModal={closeModal} />
+      )}
       <ImageContainer>
         <SquareOverlay />
         <GraphicImage src={grafico} alt="grafico" />
@@ -40,7 +57,7 @@ const Banner = () => {
           </Description>
           <BorderSeparator>
             <ButtonAndImageContainer>
-              <ButtonDemo>VER DEMONSTRAÇÃO</ButtonDemo>
+              <ButtonDemo onClick={openModal}>VER DEMONSTRAÇÃO</ButtonDemo>
               <CustomImage src={rdStation} alt="Top 10 - Apps Mais Usados" />
             </ButtonAndImageContainer>
             <RatingContainer>
