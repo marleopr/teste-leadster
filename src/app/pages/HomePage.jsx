@@ -1,6 +1,12 @@
 "use client";
 import { createContext } from "react";
-import { Main, RangeButton, Button, SelectInput } from "./HomePageStyled";
+import {
+  Main,
+  RangeButton,
+  Button,
+  SelectInput,
+  RangeSelect,
+} from "./HomePageStyled";
 import Cards from "../components/cards/Cards";
 
 const Context = createContext();
@@ -14,9 +20,12 @@ const HomePage = () => {
         <Button>Marketing Digital</Button>
         <Button>Geração de Leads</Button>
         <Button>Mídia Paga</Button>
-        <SelectInput>
-          <option>Data de Publicação</option>
-        </SelectInput>
+        <RangeSelect>
+          Ordenar por
+          <SelectInput>
+            <option>Data de Publicação</option>
+          </SelectInput>
+        </RangeSelect>
       </RangeButton>
       <Cards />
     </Main>

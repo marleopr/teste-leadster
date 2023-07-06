@@ -81,7 +81,11 @@ export const HeaderSubtitle = styled.p`
 
 export const HeaderDescription = styled.p`
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 700;
+  .header-description {
+    font-weight: 800;
+    margin-left: 3px;
+  }
 `;
 
 export const HeaderDivider = styled.div`

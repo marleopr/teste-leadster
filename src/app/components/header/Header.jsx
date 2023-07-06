@@ -33,15 +33,18 @@ const Header = () => {
         <p className="text-leadster-400">WEBINARS EXCLUSIVOS</p>
         <HeaderTitle>Menos Conversinha,</HeaderTitle>
         <div className="relative flex flex-col text-3xl">
-          <HeaderSubtitle className="text-transparent">Mais Conversão</HeaderSubtitle>
+          <HeaderSubtitle className="text-transparent">
+            Mais Conversão
+          </HeaderSubtitle>
           <div className="slogan">
             <Image src={logoSlogan} alt="head asset" />
           </div>
           <HeaderDivider />
         </div>
         <HeaderDescription>
-          Conheça as estratégias que mudaram o jogo <br className="md:hidden" />
-          e como aplicá-las no seu negócio
+          <span>Conheça as estratégias que</span>
+          <span className="header-description">mudaram o jogo </span> <br className="md:hidden" />e como
+          aplicá-las no seu negócio
         </HeaderDescription>
       </RangeInfo>
     </Main>

@@ -38,7 +38,7 @@ const Cards = () => {
     <Main>
       <CardMovies>
         <ImagesPoster>
-          {require("./videos.json").videos.map((video, index) => (
+          {require("../../constants/videos.json").videos.map((video, index) => (
             <div key={index}>
               <PosterContainer onClick={() => openModal(video)}>
                 <PosterPath src={video.image} alt={video.title} />

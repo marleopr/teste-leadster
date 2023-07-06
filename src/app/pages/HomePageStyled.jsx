@@ -32,9 +32,13 @@ export const SelectInput = styled.select`
   border-radius: 15px;
   padding: 5px 10px 5px 10px;
   margin: 5px;
+  margin-left: 1rem;
   cursor: pointer;
   &:hover {
     border: 1px solid #007eff;
     color: #007eff;
   }
 `;
+export const RangeSelect = styled.div`
+  margin-left: 5rem;
+`
