@@ -41,27 +41,17 @@ export const RangeInfo = styled.div`
     border-radius: 9% 7% 7% 2% / 23% 45% 51% 5%;
     padding: 5px 10px 5px 10px;
   }
-
-  /* .text-2xl {
-    font-size: 24px;
-    font-weight: bold;
-    color: #2c83fb;
-    margin-bottom: 10px;
-  } */
-
   .text-transparent {
     color: transparent;
     background-image: linear-gradient(to right, #2c83fb 0%, #1f76f0 70%);
     -webkit-background-clip: text;
     background-clip: text;
   }
-
   .text-3xl {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 10px;
   }
-
   .slogan {
     position: absolute;
     top: 1px;
@@ -69,19 +59,6 @@ export const RangeInfo = styled.div`
     width: 15px;
     height: 10px;
   }
-
-  /* .divider {
-    height: 1px;
-    background-color: #000000;
-    opacity: 0.2;
-    width: 100%;
-    margin: 10px 0;
-  } */
-
-  /* .text-center {
-    text-align: center;
-  } */
-
   .text-base {
     font-size: 16px;
     font-weight: bold;

@@ -30,11 +30,12 @@ export const ImagesPoster = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   position: relative;
   cursor: pointer;
 `;
 export const PosterContainer = styled.div`
+  width: 20rem;
   position: relative;
   border-radius: 10px;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
@@ -68,7 +69,7 @@ export const PlayButton = styled.div`
   height: 80px;
   font-size: 40px;
   color: #fff;
-  top: 50%;
+  top: 40%;
   left: 50%;
   border-radius: 50%;
   transform: translate(-50%, -50%);
@@ -95,8 +96,8 @@ export const ModalOverlay = styled.div`
 
 export const ModalContent = styled.div`
   position: relative;
-  width: 450px;
-  height: 670px;
+  width: 25rem;
+  height: 43rem;
   border-radius: 10px;
   border-top: solid #0084ff;
   background-color: #fff;
