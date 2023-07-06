@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import colors from "../constants/colors"
 
 export const PaginationContainer = styled.div`
   display: flex;
@@ -10,15 +11,15 @@ export const PageNumber = styled.button`
   border: none;
   outline: none;
   background-color: transparent;
-  color: ${({ selected }) => (selected ? "#0084ff" : "#000000")};
+  color: ${({ selected }) => (selected ? `${colors.blue}` : `${colors.black}`)};
   font-weight: ${({ selected }) => (selected ? "bold" : "normal")};
-  border: ${({ selected }) => (selected ? "1px solid #0084ff" : "none")};
+  border: ${({ selected }) => (selected ? `1px solid ${colors.blue}` : `none`)};
   border-radius: 5px;
   padding: 5px 10px;
   margin: 0 5px;
   cursor: pointer;
   &:hover{
-    color: #0084ff;
+    color: ${colors.blue};
   }
 `;
 export const PageLabel = styled.span`

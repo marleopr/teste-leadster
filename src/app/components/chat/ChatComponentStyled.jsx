@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import colors from "../../constants/colors"
 
 export const ChatContainer = styled.div`
   display: flex;
@@ -16,8 +17,8 @@ export const ChatModal = styled.div`
   width: 20rem;
   height: 20rem;
   border-radius: 10px;
-  border-top: 30px solid #0084ff;
-  background-color: #fff;
+  border-top: 30px solid ${colors.blue};
+  background-color: ${colors.white};
 `;
 export const ChatCloseButton = styled.button`
   position: absolute;
@@ -26,16 +27,16 @@ export const ChatCloseButton = styled.button`
   top: 1px;
   right: 10px;
   border: none;
-  color: #555555;
+  color: ${colors.gray};
   background-color: transparent;
   cursor: pointer;
   &:hover {
-    color: #0084ff;
+    color: ${colors.blue};
   }
 `;
 export const ChatMsg = styled.p`
   background-color: #f0f0f0;
-  color: #000000;
+  color: ${colors.black};
   padding: 10px 20px;
   margin-top: 10px;
   border-radius: 20px;
@@ -46,8 +47,8 @@ export const ChatMsg = styled.p`
   }
 `;
 export const ChatButton = styled.button`
-  background-color: #007eff;
-  color: #ffffff;
+  background-color: ${colors.blue};
+  color: ${colors.white};
   padding: 10px 20px;
   margin-top: 10px;
   margin-bottom: 10px;

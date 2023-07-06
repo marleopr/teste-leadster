@@ -62,7 +62,7 @@ const Banner = () => {
             </ButtonAndImageContainer>
             <RatingContainer>
               <CardContainer>
-                <Image src={card} alt="cartão" />
+                <Image src={card} alt="cartão" className="card" />
                 <p>
                   <span className="font-bold">Não </span>é necessário Cartão de
                   Crédito |

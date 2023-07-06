@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import colors from "../../constants/colors"
 
 export const Main = styled.div`
   display: flex;
@@ -25,25 +26,25 @@ export const RangeInfo = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #f0f8ff;
+  background-color: #e6f3ff;
   margin-bottom: 20px;
   width: 100%;
   height: 20rem;
 
   .text-leadster-400 {
     font-weight: bold;
-    color: #2c83fb;
+    color: ${colors.blue};
     font-size: 10px;
     text-transform: uppercase;
     margin-top: 2.5rem;
     margin-bottom: 0.5rem;
-    border: 2px solid #2c83fb;
+    border: 2px solid ${colors.blue};
     border-radius: 9% 7% 7% 2% / 23% 45% 51% 5%;
     padding: 5px 10px 5px 10px;
   }
   .text-transparent {
     color: transparent;
-    background-image: linear-gradient(to right, #2c83fb 0%, #1f76f0 70%);
+    background-image: linear-gradient(to right, ${colors.blue} 0%, ${colors.blue} 70%);
     -webkit-background-clip: text;
     background-clip: text;
   }
@@ -62,7 +63,7 @@ export const RangeInfo = styled.div`
   .text-base {
     font-size: 16px;
     font-weight: bold;
-    color: #000000;
+    color: ${colors.black};
     margin-top: 10px;
   }
 `;
@@ -75,7 +76,7 @@ export const HeaderTitle = styled.h2`
 export const HeaderSubtitle = styled.p`
   font-size: 58px;
   font-weight: bold;
-  color: #2c83fb;
+  color: ${colors.blue};
   padding-bottom: 10px;
 `;
 
@@ -90,7 +91,7 @@ export const HeaderDescription = styled.p`
 
 export const HeaderDivider = styled.div`
   height: 1px;
-  background-color: #000000;
+  background-color: ${colors.black};
   opacity: 0.2;
   width: 120%;
   margin: 20px -10% 5px -10%;

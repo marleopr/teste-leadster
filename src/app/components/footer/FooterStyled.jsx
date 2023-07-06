@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
+import colors from "../../constants/colors"
 
 export const Main = styled.div`
   display: flex;
@@ -8,10 +9,10 @@ export const Main = styled.div`
   align-items: center;
   margin-top: 0px;
   p {
-    color: #808080;
+    color: ${colors.gray};
   }
   .address {
-    color: black;
+    color: ${colors.black};
   }
 `;
 
@@ -38,10 +39,10 @@ export const Menu = styled.div`
   }
   li {
     margin-top: 25px;
-    color: #858da8;
+    color: ${colors.gray};
     &:hover {
       cursor: pointer;
-      color: #007eff;
+      color: ${colors.blue};
     }
   }
 `;
@@ -51,7 +52,7 @@ export const Socials = styled(Image)`
   border-radius: 25px;
   background-color: #e2e2e2;
   &:hover {
-    background-color: #007eff;
+    background-color: ${colors.blue};
     cursor: pointer;
   }
 `;
@@ -62,7 +63,7 @@ export const InfoFooter = styled.p`
   width: 80%;
   margin-bottom: 20px;
   .info-footer {
-    color: #007eff;
+    color: ${colors.blue};
     margin-left: 5px;
   }
 `;
@@ -72,5 +73,5 @@ export const FooterDivider = styled.div`
   margin: 20px -10% 5px -10%;
   margin-bottom: 20px;
   opacity: 0.2;
-  background-color: #858da8;
+  background-color: ${colors.gray};
 `;

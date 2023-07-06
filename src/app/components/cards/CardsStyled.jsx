@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
+import colors from "../../constants/colors";
 
 export const Main = styled.div`
   display: flex;
@@ -21,7 +22,7 @@ export const CardMovies = styled.div`
     padding: 10px;
     font-weight: 600;
     &:hover {
-      color: #2c83fb;
+      color: ${colors.blue};
     }
   }
 `;
@@ -57,7 +58,7 @@ export const PosterPath = styled.img`
 `;
 
 export const Title = styled.p`
-  color: #000000;
+  color: ${colors.black};
 `;
 
 export const PlayButton = styled.div`
@@ -68,7 +69,6 @@ export const PlayButton = styled.div`
   width: 80px;
   height: 80px;
   font-size: 40px;
-  color: #fff;
   top: 40%;
   left: 50%;
   border-radius: 50%;
@@ -80,6 +80,22 @@ export const PlayButton = styled.div`
 export const PlayIcon = styled(Image)`
   width: 60px;
   height: 60px;
+`;
+export const CardDividerTop = styled.div`
+  width: 100%;
+  height: 1px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  opacity: 0.2;
+  background-color: ${colors.gray};
+`;
+export const CardDividerBottom = styled.div`
+  width: 100%;
+  height: 1px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  opacity: 0.2;
+  background-color: ${colors.gray};
 `;
 export const ModalOverlay = styled.div`
   display: flex;
@@ -99,8 +115,8 @@ export const ModalContent = styled.div`
   width: 25rem;
   height: 43rem;
   border-radius: 10px;
-  border-top: solid #0084ff;
-  background-color: #fff;
+  border-top: solid ${colors.blue};
+  background-color: ${colors.white};
 
   iframe {
     width: 100%;
@@ -130,18 +146,18 @@ export const ModalCloseButton = styled.button`
   top: 1px;
   right: 10px;
   border: none;
-  color: #555555;
+  color: ${colors.gray};
   background-color: transparent;
   cursor: pointer;
   &:hover {
-    color: #0084ff;
+    color: ${colors.blue};
   }
 `;
 export const ModalTitle = styled.h2`
   font-weight: 600;
   padding: 35px 60px 20px 60px;
   .title {
-    color: #0084ff;
+    color: ${colors.blue};
     margin-right: 5px;
   }
 `;
@@ -170,7 +186,7 @@ export const Button = styled.button`
       rgba(194, 244, 234, 1) 25%
     );
     &:hover {
-      color: #000000;
+      color: ${colors.black};
     }
     &:active {
       background: rgb(159, 239, 223);
@@ -191,7 +207,7 @@ export const Button = styled.button`
     );
     color: #0a6bc5;
     &:hover {
-      color: #000000;
+      color: ${colors.black};
     }
     &:active {
       background: rgb(161, 217, 255);
@@ -211,7 +227,7 @@ export const Button = styled.button`
     );
     color: #9d870d;
     &:hover {
-      color: #000000;
+      color: ${colors.black};
     }
     &:active {
       background: rgb(255, 241, 160);
@@ -231,20 +247,4 @@ export const DownloadIcon = styled(Image)`
   left: 5px;
   right: 5px;
   transform: translateY(-50%);
-`;
-export const CardDividerTop = styled.div`
-  width: 100%;
-  height: 1px;
-  margin-top: 10px;
-  margin-bottom: 50px;
-  opacity: 0.2;
-  background-color: #858da8;
-`;
-export const CardDividerBottom = styled.div`
-  width: 100%;
-  height: 1px;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  opacity: 0.2;
-  background-color: #858da8;
 `;

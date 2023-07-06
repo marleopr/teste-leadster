@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
+import colors from "../../constants/colors";
 
 export const GraphicBannerSection = styled.section`
   display: flex;
@@ -109,12 +110,12 @@ export const ButtonDemo = styled.button`
   width: 200px;
   height: 50px;
   border-radius: 25px;
-  color: #ffffff;
-  background-color: #007eff;
+  color: ${colors.white};
+  background-color: ${colors.blue};
   &:hover {
-    border: 1px solid #007eff;
-    color: #007eff;
-    background-color: #ffffff;
+    border: 1px solid ${colors.blue};
+    color: ${colors.blue};
+    background-color: ${colors.white};
   }
 `;
 
@@ -139,6 +140,9 @@ export const CardContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  .card {
+    margin-right: 5px;
+  }
   @media (min-width: 1024px) {
     justify-content: flex-start;
   }
