@@ -66,7 +66,7 @@ export const InfoFooter = styled.p`
     margin-left: 5px;
   }
 `;
-export const HeaderDivider = styled.div`
+export const FooterDivider = styled.div`
   width: 100%;
   height: 1px;
   margin: 20px -10% 5px -10%;

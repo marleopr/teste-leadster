@@ -232,3 +232,19 @@ export const DownloadIcon = styled(Image)`
   right: 5px;
   transform: translateY(-50%);
 `;
+export const CardDividerTop = styled.div`
+  width: 100%;
+  height: 1px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  opacity: 0.2;
+  background-color: #858da8;
+`;
+export const CardDividerBottom = styled.div`
+  width: 100%;
+  height: 1px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  opacity: 0.2;
+  background-color: #858da8;
+`;

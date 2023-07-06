@@ -1,5 +1,5 @@
 "use client";
-import { createContext } from "react";
+import { createContext, useState } from "react";
 import {
   Main,
   RangeButton,
@@ -8,10 +8,13 @@ import {
   RangeSelect,
 } from "./HomePageStyled";
 import Cards from "../components/cards/Cards";
+import videosData from "../constants/videos.json";
 
 const Context = createContext();
 
 const HomePage = () => {
+  const [videos, setVideos] = useState(videosData.videos);
+
   return (
     <Main>
       <RangeButton>
@@ -27,7 +30,7 @@ const HomePage = () => {
           </SelectInput>
         </RangeSelect>
       </RangeButton>
-      <Cards />
+      <Cards videos={videos} />
     </Main>
   );
 };

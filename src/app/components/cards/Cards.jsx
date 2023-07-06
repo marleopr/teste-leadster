@@ -16,13 +16,28 @@ import {
   RangeButton,
   Button,
   DownloadIcon,
+  CardDividerTop,
+  CardDividerBottom,
 } from "./CardsStyled";
 import play from "public/assets/botao-play.png";
 import cloudIcon from "public/assets/cloud-download.svg";
-
+import Pagination from "../../hooks/pagination";
+import PropTypes from "prop-types";
 const Context = createContext();
 
-const Cards = () => {
+const Cards = ({ videos }) => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 9;
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems =
+    videos && videos.slice(indexOfFirstItem, indexOfLastItem);
+  const totalPages = Math.ceil(videos.length / itemsPerPage);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedVideo, setSelectedVideo] = useState(null);
 
@@ -37,20 +52,29 @@ const Cards = () => {
   return (
     <Main>
       <CardMovies>
+        <CardDividerTop />
         <ImagesPoster>
-          {require("../../constants/videos.json").videos.map((video, index) => (
-            <div key={index}>
-              <PosterContainer onClick={() => openModal(video)}>
-                <PosterPath src={video.image} alt={video.title} />
-                <PlayButton className="play-button">
-                  <PlayIcon src={play} alt="Play" />
-                </PlayButton>
-                <h2>{video.title}</h2>
-              </PosterContainer>
-            </div>
-          ))}
+          {currentItems &&
+            currentItems.map((video, index) => (
+              <div key={index}>
+                <PosterContainer onClick={() => openModal(video)}>
+                  <PosterPath src={video.image} alt={video.title} />
+                  <PlayButton className="play-button">
+                    <PlayIcon src={play} alt="Play" />
+                  </PlayButton>
+                  <h2>{video.title}</h2>
+                </PosterContainer>
+              </div>
+            ))}
         </ImagesPoster>
+        <CardDividerBottom />
       </CardMovies>
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={handlePageChange}
+      />
+
       {modalOpen && selectedVideo && (
         <ModalOverlay>
           <ModalContent>
@@ -91,5 +115,8 @@ const Cards = () => {
       )}
     </Main>
   );
+};
+Cards.propTypes = {
+  videos: PropTypes.array.isRequired,
 };
 export default Cards;

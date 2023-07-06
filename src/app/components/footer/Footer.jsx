@@ -12,7 +12,7 @@ import {
   Menu,
   Socials,
   InfoFooter,
-  HeaderDivider,
+  FooterDivider,
 } from "./FooterStyled";
 const Context = createContext();
 
@@ -62,7 +62,7 @@ const Footer = () => {
           </li>
         </ul>
       </Menu>
-      <HeaderDivider />
+      <FooterDivider />
 
       <InfoFooter>
         <span>
