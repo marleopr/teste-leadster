@@ -7,14 +7,16 @@ import Footer from "./components/footer/Footer";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Head>
         <meta name="color-scheme" content="light" />
       </Head>
-      <Header />
-      <HomePage />
-      <Banner />
-      <Footer />
-    </main>
+      <main>
+        <Header />
+        <HomePage />
+        <Banner />
+        <Footer />
+      </main>
+    </>
   );
 }
