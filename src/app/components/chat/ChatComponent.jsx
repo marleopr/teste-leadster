@@ -18,7 +18,6 @@ const ChatComponent = ({ openModal, closeModal }) => {
             <ChatButton>Sim, começar agora</ChatButton>
             <p>Clicando acima você aceita nossas Políticas de privacidade</p>
           </ChatMsg>
-          {/* Lógica e conteúdo do chat */}
         </ChatModal>
       )}
     </ChatContainer>

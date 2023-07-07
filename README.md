@@ -14,6 +14,7 @@ https://marleo-leadster.vercel.app
 - Cards dinâmicos: A partir de um arquivo JSON, criei cards que exibem informações relevantes. Essa abordagem permite adicionar ou modificar facilmente o conteúdo dos cards apenas atualizando o arquivo JSON.
 - Simulacro de chat: Implementei um chat simulado que é ativado ao clicar em um botão. Isso adiciona um elemento interativo à página, proporcionando uma experiência mais envolvente para o usuário.
 - Paginação funcional: Implementei a funcionalidade de paginação, permitindo que os usuários naveguem entre diferentes páginas de conteúdo. Isso melhora a usabilidade e facilita a exploração do site.
+- Site totalmente responsivo para dispositivos móveis.
 - Controle de versão com o GitHub: Enviei o código-fonte do projeto para o GitHub, que é uma plataforma popular para hospedar repositórios Git. Isso permite controlar e colaborar no desenvolvimento do código.
 - Deploy no Vercel: Utilizei o Vercel, uma plataforma de hospedagem de aplicativos web, para fazer o deploy do projeto. Isso torna o site acessível na web para que outras pessoas possam visualizá-lo.
 

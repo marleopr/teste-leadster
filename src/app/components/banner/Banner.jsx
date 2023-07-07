@@ -25,7 +25,6 @@ import ChatComponent from "../chat/ChatComponent";
 
 const Banner = () => {
   const [showChat, setShowChat] = useState(false);
-  // const [modalOpen, setModalOpen] = useState(false);
 
   const openModal = () => {
     setShowChat(true);
@@ -33,9 +32,6 @@ const Banner = () => {
   const closeModal = () => {
     setShowChat(false);
   };
-  // const handleChatToggle = () => {
-  //   setShowChat(!showChat);
-  // };
 
   return (
     <GraphicBannerSection>

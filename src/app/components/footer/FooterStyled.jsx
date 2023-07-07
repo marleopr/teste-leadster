@@ -47,7 +47,6 @@ export const Menu = styled.div`
   }
   @media screen and (max-device-width: 480px) {
     flex-direction: column;
-    /* align-items: center; */
     padding: 10px;
     ul{
 
