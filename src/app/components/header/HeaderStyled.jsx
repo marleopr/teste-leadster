@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import colors from "../../constants/colors"
+import colors from "../../constants/colors";
 
 export const Main = styled.div`
   display: flex;
@@ -44,7 +44,11 @@ export const RangeInfo = styled.div`
   }
   .text-transparent {
     color: transparent;
-    background-image: linear-gradient(to right, ${colors.blue} 0%, ${colors.blue} 70%);
+    background-image: linear-gradient(
+      to right,
+      ${colors.blue} 0%,
+      ${colors.blue} 70%
+    );
     -webkit-background-clip: text;
     background-clip: text;
   }
@@ -66,11 +70,30 @@ export const RangeInfo = styled.div`
     color: ${colors.black};
     margin-top: 10px;
   }
+  @media screen and (max-device-width: 480px) {
+    height: auto;
+    padding: 20px;
+    margin-bottom: 10px;
+
+    .text-leadster-400 {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .text-3xl {
+      font-size: 24px;
+    }
+    .text-base {
+      font-size: 14px;
+    }
+  }
 `;
 
 export const HeaderTitle = styled.h2`
   font-size: 32px;
   font-weight: bold;
+  @media screen and (max-device-width: 480px) {
+    font-size: 24px;
+  }
 `;
 
 export const HeaderSubtitle = styled.p`
@@ -78,6 +101,9 @@ export const HeaderSubtitle = styled.p`
   font-weight: bold;
   color: ${colors.blue};
   padding-bottom: 10px;
+  @media screen and (max-device-width: 480px) {
+    font-size: 40px;
+  }
 `;
 
 export const HeaderDescription = styled.p`
@@ -87,6 +113,9 @@ export const HeaderDescription = styled.p`
     font-weight: 800;
     margin-left: 3px;
   }
+  @media screen and (max-device-width: 480px) {
+    font-size: 10px;
+  }
 `;
 
 export const HeaderDivider = styled.div`
@@ -95,4 +124,8 @@ export const HeaderDivider = styled.div`
   opacity: 0.2;
   width: 120%;
   margin: 20px -10% 5px -10%;
+  @media screen and (max-device-width: 480px) {
+    width: 100%;
+    margin: 10px 0 5px 0;
+  }
 `;

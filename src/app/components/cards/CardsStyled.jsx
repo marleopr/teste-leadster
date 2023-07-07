@@ -9,6 +9,9 @@ export const Main = styled.div`
   box-sizing: border-box;
   overflow-x: hidden;
   width: 70vw;
+  @media screen and (max-device-width: 480px) {
+    width: 100%;
+  }
 `;
 
 export const CardMovies = styled.div`
@@ -88,6 +91,10 @@ export const CardDividerTop = styled.div`
   margin-bottom: 50px;
   opacity: 0.2;
   background-color: ${colors.gray};
+  @media screen and (max-device-width: 480px) {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
 `;
 export const CardDividerBottom = styled.div`
   width: 100%;
@@ -96,6 +103,10 @@ export const CardDividerBottom = styled.div`
   margin-bottom: 20px;
   opacity: 0.2;
   background-color: ${colors.gray};
+  @media screen and (max-device-width: 480px) {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
 `;
 export const ModalOverlay = styled.div`
   display: flex;
@@ -159,6 +170,10 @@ export const ModalTitle = styled.h2`
   .title {
     color: ${colors.blue};
     margin-right: 5px;
+  }
+  @media screen and (max-device-width: 480px) {
+    font-size: 20px;
+    padding: 25px 40px 15px 40px;
   }
 `;
 

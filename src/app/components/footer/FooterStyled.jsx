@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
-import colors from "../../constants/colors"
+import colors from "../../constants/colors";
 
 export const Main = styled.div`
   display: flex;
@@ -45,6 +45,16 @@ export const Menu = styled.div`
       color: ${colors.blue};
     }
   }
+  @media screen and (max-device-width: 480px) {
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 10px;
+    ul{
+
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
 `;
 export const Socials = styled(Image)`
   padding: 5px;
@@ -66,6 +76,11 @@ export const InfoFooter = styled.p`
     color: ${colors.blue};
     margin-left: 5px;
   }
+  @media screen and (max-device-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
 `;
 export const FooterDivider = styled.div`
   width: 100%;
@@ -74,4 +89,7 @@ export const FooterDivider = styled.div`
   margin-bottom: 20px;
   opacity: 0.2;
   background-color: ${colors.gray};
+  @media screen and (max-device-width: 480px) {
+    margin-bottom: 10px;
+  }
 `;
